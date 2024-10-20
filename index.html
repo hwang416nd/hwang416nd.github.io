@@ -1,1005 +1,164 @@
-
 <!DOCTYPE html>
+<html lang="vi"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-<html lang="en"><head>
-
-<meta charset="UTF-8">
-
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>I Love You</title>
-
+<title>❤️️️</title>
+<meta name="viewport" content="width=500, target-densitydpi=device-dpi, user-scalable=0">
+<link type="text/css" rel="stylesheet" href="./1❤️️️_files/common.css">
 <style>
-
-*{
-
-margin: 0;
-
-padding: 0;
-
-box-sizing: border-box;
-
-}
-
-html,
-
-body {
-
-overflow: hidden;
-
-background-color: #000 !important;
-
-}
-
-body {
-
--webkit-font-soothing: antialiased;
-
-}
-
-.webgl {
-
-position: fixed;
-
-width: 100vw;
-
-height: 100vw;
-
-top: 0;
-
-left: 0;
-
-outline: none;
-
-}
-
-h1{
-
-position: absolute;
-
-top: 10vh;
-
-left: 2.5rem;
-
-right: 1rem;
-
-text-align: center;
-
-font-size: max(1rem, 3vh);
-
-}
-
-button {
-
-position: absolute;
-
-left: 0;
-
-top: 0;
-
-bottom: 0;
-
-height: 12vh;
-
-width: 12vh;
-
-transform: translateY(2vh);
-
-right: 0;
-
-margin: auto;
-
--webkit-appearance: none;
-
-background: transparent;
-
-color: inherit;
-
-border: none;
-
-cursor: pointer;
-
-}
-
-svg{
-
-width: 3.5vh;
-
-}
-
+    body{margin:0px;padding:0px;}
+    #openBtn{position:fixed;top:-10%;left:0;width:100%;height:100%;z-index:999;display:flex;flex-direction:column;justify-content:center;align-items:center;color:#fff;font-size: 1.6rem;}
+    #openBtn p{margin: .8rem 0;font-weight: bold;}
+    #openBtn img{width: 8rem;margin-bottom:24px;animation-name: heartbeat;animation-duration: 1.5s;animation-timing-function: cubic-bezier(0,0,0,1.74);animation-delay: .5s;animation-iteration-count: infinite;animation-play-state: running;}
+    #div_container{width: 500px; margin: 0 auto; position: relative; font-size: 1em;}
+    #video1{display:none;position: absolute; top: 45%; left: 50%; width: 100%;object-fit: fill;}
+    .type_words{font-size: 1.25rem; line-height: 2rem; color: #fff; padding: 2rem;display:none;}
+    .bg img{width:100%;background-repeat: repeat; background-position: center; opacity: 0.0;}
+    .centered-div { position: absolute; top: 45%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: #fff;z-index:999;font-size: 1.6rem; font-weight: bold;}
+    .animated-text {text-shadow: 1px 1px 0px #000, -1px -1px 0px #000, -1px 1px 0px #000, 1px -1px 0px #000;}
+    @keyframes moveText { 0% { transform: translateY(0); } 50% { transform: translateY(-10px); } 100% { transform: translateY(0); } }
+    @keyframes heartbeat{0%{transform:scale(.95)}100%{transform:scale(.95)}50%{transform:scale(1)}}
+    #btn-make{bottom:150px;}
+    #btn-make,#div_support{right:22px;}
 </style>
+<style>#tr-popup,#tr-popup * {all: unset;}#tr-popup {font: 15px "Segoe UI", Arial, Helvetica, sans-serif;color: #222;padding: 24px;display: block;z-index: 2147483647;position: absolute;max-width: 400px;min-width: 300px;direction: ltr;text-align: left;background: #fff;border-radius: 2px;box-sizing: border-box;box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 12px 24px 0 rgba(51, 51, 51, 0.3);transition: opacity, visibility;transition-duration: 0.2s;}#tr-popup[data-hidden="true"] {opacity: 0;visibility: hidden;}#tr-popup[data-position="top"] {margin-top: -12px;}#tr-popup[data-position="bottom"] {margin-top: 12px;}#tr-popup .tr-popup__arrow {top: 100%;left: 50%;width: 26px;height: 12px;display: block;position: absolute;margin-left: -13px;margin-top: -1px;background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNiIgaGVpZ2h0PSIxMiI+PHBhdGggZD0iTTAgMGwxMyAxMkwyNiAweiIgb3BhY2l0eT0iLjEiLz48cGF0aCBkPSJNMSAwbDEyIDExTDI1IDB6IiBmaWxsPSIjZmZmIi8+PC9zdmc+") no-repeat;}#tr-popup[data-position="bottom"] .tr-popup__arrow {top: auto;bottom: 100%;margin-bottom: -1px;transform: rotate(180deg);}#tr-popup .tr-popup__value,#tr-popup .tr-popup__block {word-wrap: break-word;white-space: pre-wrap;}[data-type="trSpan"][data-translated="true"][data-source-lang="ja"],[data-type="trSpan"][data-translated="true"][data-source-lang="zh"],#tr-popup .tr-popup__title_original,#tr-popup .tr-popup__block_a,#tr-popup .tr-popup__block_b,#tr-popup .tr-popup__button {font-family: "Segoe UI", Arial, Helvetica, sans-serif !important;}#tr-popup .tr-popup__title_original {font-weight: bold;}#tr-popup .tr-popup__block {display: block;}#tr-popup .tr-popup__link {cursor: pointer;-webkit-user-select: none;user-select: none;}#tr-popup .tr-popup__link_suggest {color: #1378d7;font-size: 13px;line-height: 18px;margin-right: 22px;}#tr-popup .tr-popup__link_suggest:hover,#tr-popup .tr-popup__link_suggest:active {color: #000;}#tr-popup .tr-popup__logo {height: 18px;opacity: 0.3;display: inline-block;transition: opacity 0.2s;vertical-align: top;}#tr-popup .tr-popup__logo_company {width: 34px;filter: brightness(0);background: url("https://yastatic.net/s3/trbro/v20.5.1.0/i/service_logo.svg");background-size: 34px;background-position: 0 -18px;}#tr-popup[lang="ru"] .tr-popup__logo_company {background-position: 0 0;}#tr-popup .tr-popup__logo_service {width: 42px;background: url("https://yastatic.net/s3/trbro/v20.5.1.0/i/service_name.svg");margin-left: 2px;background-size: 63px;background-position: 0 -18px;}#tr-popup[lang="ru"] .tr-popup__logo_service {width: 57px;background-position: 0 0;}#tr-popup[lang="uk"] .tr-popup__logo_service {width: 56px;background-position: 0 -36px;}#tr-popup[lang="tr"] .tr-popup__logo_service {width: 25px;background-position: 0 -54px;}#tr-popup .tr-popup__link_service:hover .tr-popup__logo {opacity: 0.6;}#tr-popup .tr-popup__input {width: 100%;height: 80px;resize: none;border: 2px solid #e5e5e5;padding: 8px;display: block;font-size: 15px;box-sizing: border-box;border-radius: 2px;}#tr-popup .tr-popup__input:focus {border-color: #bbb;}#tr-popup .tr-popup__block_a,#tr-popup .tr-popup__block_b {margin-top: 16px;}#tr-popup .tr-popup__block_a {display: flex;justify-content: space-between;}#tr-popup .tr-popup__block_b {position: relative;}#tr-popup .tr-popup__block_submit {text-align: right;margin-top: 24px;}#tr-popup .tr-popup__overlay {top: 0;left: 0;right: 0;bottom: 0;position: absolute;}#tr-popup .tr-popup__overlay_submitted {color: #999;z-index: 1;display: flex;background: #fff;align-items: center;justify-content: center;}#tr-popup:not([data-expanded="true"]) .tr-popup__block_b,#tr-popup:not([data-submitted="true"]) .tr-popup__overlay_submitted {display: none;}#tr-popup .tr-popup__menu {font-size: 13px;opacity: 0;visibility: hidden;white-space: nowrap;position: absolute;bottom: 100%;margin-bottom: 8px;padding: 4px 14px;z-index: 1;background-color: #f5f5f5;border: 1px solid #bbb;border-radius: 2px;box-shadow: 0px 0 0 1px rgba(0, 0, 0, 0.1), 0 8px 14px 0 rgba(51, 51, 51, 0.3);}#tr-popup[data-menu-position="left"] .tr-popup__menu {right: 0;}#tr-popup[data-menu="true"] .tr-popup__menu {opacity: 1;visibility: visible;}#tr-popup .tr-popup__menu:hover {background-color: #efefef;}#tr-popup .tr-popup__button {cursor: pointer;display: inline-block;-webkit-user-select: none;user-select: none;}#tr-popup .tr-popup__button_menu,#tr-popup .tr-popup__button_close {top: 4px;width: 20px;height: 20px;opacity: 0.3;position: absolute;}#tr-popup .tr-popup__button_close {right: 4px;background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCI+PHBhdGggZD0iTTkuMjkzIDEwTDYuMTQ2IDYuODU0YS41LjUgMCAxIDEgLjcwOC0uNzA4TDEwIDkuMjkzbDMuMTQ2LTMuMTQ3YS41LjUgMCAwIDEgLjcwOC43MDhMMTAuNzA3IDEwbDMuMTQ3IDMuMTQ2YS41LjUgMCAwIDEtLjcwOC43MDhMMTAgMTAuNzA3bC0zLjE0NiAzLjE0N2EuNS41IDAgMCAxLS43MDgtLjcwOEw5LjI5MyAxMHoiLz48L3N2Zz4=");}#tr-popup .tr-popup__button_menu {right: 24px;background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjAiIHdpZHRoPSIyMCI+PHBhdGggZD0ibTUgNnYxaDEwdi0xaC0xMHptMCAzdjFoMTB2LTFoLTEwem0wIDN2MWgxMHYtMWgtMTB6Ii8+PC9zdmc+");}#tr-popup .tr-popup__button_menu:hover,#tr-popup .tr-popup__button_close:hover {opacity: 0.5;}#tr-popup .tr-popup__button_close:active {opacity: 0.6;}#tr-popup[data-menu="true"] .tr-popup__button_menu {opacity: 1;}#tr-popup .tr-popup__button_submit {color: #000;height: 28px;padding: 0 16px;font-size: 13px;min-width: 112px;background: #fc0;box-sizing: border-box;text-align: center;line-height: 28px;border-radius: 2px;}#tr-popup .tr-popup__button_submit:hover {background: #ffb800;}#tr-popup .tr-popup__button_submit:active {background: #ffa400;}#tr-popup[data-invalid="true"] .tr-popup__button_submit {color: rgba(0, 0, 0, 0.5);cursor: default;background: rgba(0, 0, 0, 0.1);}[data-type="trSpan"][data-selected="true"] {color: #222 !important;background: #cce4f7 !important;}[data-type="trSpan"] {font-size: inherit !important;}</style></head>
+<body style="overflow-x:hidden;overflow-y:hidden;background: #000;">
+<div id="div_container">
+<div id="openBtn">
+	<p><ya-tr-span data-index="0-0" data-translated="true" data-source-lang="zh" data-target-lang="vi" data-value="❤️点开❤️️️" data-translation="Yêu bấm vào yêu trước trước" data-ch="0" data-type="trSpan" style="visibility: inherit !important;">Yêu bấm vào yêu trước trước</ya-tr-span></p>
+	<img src="./1❤️️️_files/cfbe2cd2afe4be0b31869ae01c97a7fa3e0448bd4263-NVVASc_fw1200webp">
+</div>
+
+<div class="bg">
+    <video id="video1" src="https://alimov2.a.kwimgs.com/upic/2024/05/08/12/BMjAyNDA1MDgxMjIyMjRfMzAyOTc4ODMzNF8xMzE4NzI4MjY3NzZfMF8z_b_B5299b21697c19c9dc0786fb5cc0e992c.mp4" loop="" preload="" autoplay="false" muted="" data-video="0"> 
+    <source type="video/mp4">
+    </video>
+    <div id="text" class="boxText" style="display:none;"></div>
+    <div class="type_words" id="contents"></div>
+    <div class="centered-div" style="display:none;">
+        <p class="animated-text"></p>
+    </div>
+    <img src="./1❤️️️_files/3498727a4b2892b982b3085651630b1b" alt="câm" class="tmtp">
+</div>
+</div>
+
+<div id="ctitle" style="display:none;">     ❤❤            ❤❤
+ ❤❤❤❤  ❤❤❤❤
+❤❤❤❤❤❤❤❤❤
+❤❤20ab.cn/5223❤❤
+     ❤❤❤❤❤❤❤
+          ❤❤❤❤❤
+               ❤❤❤
+                    ❤</div>
+                    
+<audio id="audio_music" src="https://alimov2.a.kwimgs.com/upic/2022/04/26/18/BMjAyMjA0MjYxODAzMDJfMjQ1MzM2NTM1OF83Mjk2OTgwODA3N18yXzM=_b_B211e96b5550616ca6d09fff7916b42d6.mp4" loop="loop"></audio>
+
+<script src="./1❤️️️_files/hm.js"></script><script src="./1❤️️️_files/jquery.min.js"></script>
+<script>
+    var play_music = false;
+    
+    function checkAudio(){
+        if(!play_music){
+            var a=document.getElementById("audio_music");play=function(){a.play();document.removeEventListener("touchstart",play,false)};if(a){a.play();document.addEventListener("DOMContentLoaded",function(){play()},false,);document.addEventListener("WeixinJSBridgeReady",function(){play()},false,);document.addEventListener("touchstart",play,false)}
+        }
+    }
+    
+    $(function(){checkAudio();});
+    var id = "1058";
+    var data_type = "0";
+    var vip_type = "0";
+    var temp_id = "29";
+
+    var _0xodL='jsjiami.com.v7';const _0x318aed=_0x451d;function _0xd67d(){const _0x9361ec=(function(){return[_0xodL,'NhXPjeBsFjAQriDdaOMmFriyK.kWcoBFmHR.Cvy7==','zSkYsSoUoW','EdOfmdf0zq','tKRcTL/cPG','W5KjB8oLWQtdPNm5WRT1W7e4W7yn','WOvnvCktjq','e0yPWOldVq','WQ3dRX4ZW65UW5nZk8od','W7tdMfVcQhO','W5hdGg4','WPFcJmohWPObWPrzahVdNW','kSoeAs/dKa','WQKVW5b/zW','kgRdTqVcNa','W6q9WOBcKmoeWPOXsq','W5SlsSkmb3e/xq','eCkKW6xcVMu','WROpbmoRW7q','W5y8kG','WOddQh/cUSoSW7lcP8koESkieCoMl8ke','wqRdOrFcImoWW7xcKXXy','i8kxW5NdTW','WOioW6XceSksqW','gu8/W6xdRG','qSkxrSoMmCkwW5BdUG','kHRdKr3dGW','pepdUdRcIHm','oftdKtNcLa','nmoAWPNcVSkWdsJdUdxcK8oe','WQRdGLCK','l0KaWPS','W4zAmSk0W7NcTtakWRqaW6KwW5K','q13cVq','WRepsmoqW4e','AmkPwSoDWPm','W6mQWOVdIConWPaYqfm8uCkbWPm','WPNdRCosW6ddM3pdG1xcRq','W5JdVMNdTSo+W7lcQmoepSoicmk7l8kpW5n6W5JcMYHAW7ZdMrdcImonWRO3nha','WOtdNJ5PWOlcU34NW70','Fmkwb0dcN8kjWOPbW58RW7dcG8kA','WPewtqddHG'].concat((function(){return['WP4iW7LCw8ordCk6FSoBWQtcRSoXcNtcJaOcBJiu','WOq4w8oFW6y','WPGaWRO5iW','W78xWQBcGCoF','WOq8C8oHWRe','W5L7W4z+zJT1zxhdUvzL','imo0ACo8f8oTW4zK','WOLGksy','A0uUwG4','WOyFW7zvxmov','WQvyrSkejq','W5z7pmkkWRi3WRz1lMlcMxHu','WQiSWRKJoW','WQRdRXi3W5PKW5zIcSok','WOZdMSkrW4axWR9Vhw3cTabSW7a','WQpcQGhcVqHZkG1+BetdSa','dqNdIY9uu1nFW5zzW5aVkq','amoka8k7D8onW5ZdKWxcPCobWOO','W7DyhmoiEW','lSkeW7pcHf8','WOhdMmk7CfC','W5WsdSkGda','CHpcKColsxbpzG','WOGqrXhdN8koWQBcGSo8','prpcGSopu1TuzG','WOinwG','WRJdN24zWQe','WQxdQmkxuh5yW44G','WOJcHZ7cOCka','W5OyEmokW4W','W4hdLSkAW5OgWRrPcW','W5xcIwm+WPhcLKaPW5a0','W5tcQKXSW6O','pI3dSrxdPW','W5ekzhTwW5qwWQhcQqWRW48SWRO','W6bWgCoZya','WO8BWPWSaq','WQtdUJfQWRi','WQHdW5ZcTCk9WQ0IWPJcJW','AMuRoJ8','pu8gWOhdTZO7z3i','ywqF'].concat((function(){return['W5vkg0tdT8k/WRZcVSodqW','wSkQw8o7fW','WQedqmkFFctcKLVcUKS','W7Xagmoh','W4lcTmkfWRxdSvRdKg/cHby','FmkwffpcMmozWO0vW5u1W7BcG8kAehn4WOOABmoUDxqedglcSfn6W5xdT0HiqutdGCofk+kDG++7K8o7lIFcLbqKW6KSvSofdW','WOa/sNvXW6mj','WPRdOMVdSSoEW77cS8kFDmkkvmo2iSkpW5mXW5pcMIOnWQ7cKaRcHCowWQCI','W5bzaCk5bG','W7CbW6C','zfBcQ3VdTG','WOiJrmo4WRO','Fx3cTL/cLmkzsqxdRmkRW5dcVCkg','B8oLWQxcUSkM','W6XnWOJcP8o5WRD5WPBdKCkKW4HwW4RdRmkwzmoA','W6hdTfBdSa','vmk+BSo1WQm','WPC6zSohW4O','WPVdMtrPWP8','WOu/WOS9AG','bmk3hMpcGG','iCkxwCoYWO7dRgOs','cXn5ra','mSk2sSo+o8ofWQa','sulcQLW7','pSokzcJdVG','WR7dTmkmvW','cSk9pMBcNq','ENVcTfNdGmoNprpdISke','Ab/cPw/cNX7dKmooWPOA','omkVefpcGW','W6TRpmk5bW','k8k9k1FcGG','zCkSqCodfq','W6OIe8kceCkKWOvA','Fg/cSLaT','BHdcK8ot','WQNdRgC','WQxdGqLIWRS','WQiIW44avYFcJW'];}()));}()));}());_0xd67d=function(){return _0x9361ec;};return _0xd67d();}function _0x451d(_0x325352,_0x238d4c){const _0xd67de4=_0xd67d();return _0x451d=function(_0x451d6e,_0x525dd8){_0x451d6e=_0x451d6e-0x1cf;let _0x387036=_0xd67de4[_0x451d6e];if(_0x451d['JECfdD']===undefined){var _0x322895=function(_0x6e9a98){const _0x42893e='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x4a6a44='',_0x432301='';for(let _0x1e5677=0x0,_0x5bcc65,_0x53dec5,_0x411644=0x0;_0x53dec5=_0x6e9a98['charAt'](_0x411644++);~_0x53dec5&&(_0x5bcc65=_0x1e5677%0x4?_0x5bcc65*0x40+_0x53dec5:_0x53dec5,_0x1e5677++%0x4)?_0x4a6a44+=String['fromCharCode'](0xff&_0x5bcc65>>(-0x2*_0x1e5677&0x6)):0x0){_0x53dec5=_0x42893e['indexOf'](_0x53dec5);}for(let _0x26ba67=0x0,_0x28bf85=_0x4a6a44['length'];_0x26ba67<_0x28bf85;_0x26ba67++){_0x432301+='%'+('00'+_0x4a6a44['charCodeAt'](_0x26ba67)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x432301);};const _0x9b4088=function(_0xc7349d,_0x349316){let _0xb1fcf8=[],_0x5aa121=0x0,_0x3027d6,_0x3605d8='';_0xc7349d=_0x322895(_0xc7349d);let _0x508064;for(_0x508064=0x0;_0x508064<0x100;_0x508064++){_0xb1fcf8[_0x508064]=_0x508064;}for(_0x508064=0x0;_0x508064<0x100;_0x508064++){_0x5aa121=(_0x5aa121+_0xb1fcf8[_0x508064]+_0x349316['charCodeAt'](_0x508064%_0x349316['length']))%0x100,_0x3027d6=_0xb1fcf8[_0x508064],_0xb1fcf8[_0x508064]=_0xb1fcf8[_0x5aa121],_0xb1fcf8[_0x5aa121]=_0x3027d6;}_0x508064=0x0,_0x5aa121=0x0;for(let _0x428c7a=0x0;_0x428c7a<_0xc7349d['length'];_0x428c7a++){_0x508064=(_0x508064+0x1)%0x100,_0x5aa121=(_0x5aa121+_0xb1fcf8[_0x508064])%0x100,_0x3027d6=_0xb1fcf8[_0x508064],_0xb1fcf8[_0x508064]=_0xb1fcf8[_0x5aa121],_0xb1fcf8[_0x5aa121]=_0x3027d6,_0x3605d8+=String['fromCharCode'](_0xc7349d['charCodeAt'](_0x428c7a)^_0xb1fcf8[(_0xb1fcf8[_0x508064]+_0xb1fcf8[_0x5aa121])%0x100]);}return _0x3605d8;};_0x451d['oITBAW']=_0x9b4088,_0x325352=arguments,_0x451d['JECfdD']=!![];}const _0x361a59=_0xd67de4[0x0],_0x41d147=_0x451d6e+_0x361a59,_0x130001=_0x325352[_0x41d147];return!_0x130001?(_0x451d['EtTNmG']===undefined&&(_0x451d['EtTNmG']=!![]),_0x387036=_0x451d['oITBAW'](_0x387036,_0x525dd8),_0x325352[_0x41d147]=_0x387036):_0x387036=_0x130001,_0x387036;},_0x451d(_0x325352,_0x238d4c);};(function(_0xda051f,_0x3772d4,_0x5f0e5c,_0x173c9e,_0x568519,_0x3e327f,_0x16922e){return _0xda051f=_0xda051f>>0x5,_0x3e327f='hs',_0x16922e='hs',function(_0x51e059,_0xb485f5,_0x1b33b1,_0x556a24,_0x39a027){const _0x3fb7ad=_0x451d;_0x556a24='tfi',_0x3e327f=_0x556a24+_0x3e327f,_0x39a027='up',_0x16922e+=_0x39a027,_0x3e327f=_0x1b33b1(_0x3e327f),_0x16922e=_0x1b33b1(_0x16922e),_0x1b33b1=0x0;const _0x28fffe=_0x51e059();while(!![]&&--_0x173c9e+_0xb485f5){try{_0x556a24=-parseInt(_0x3fb7ad(0x240,'gLHL'))/0x1*(-parseInt(_0x3fb7ad(0x1e0,'rHVw'))/0x2)+parseInt(_0x3fb7ad(0x1d1,'vRPT'))/0x3*(parseInt(_0x3fb7ad(0x1ff,'r9N!'))/0x4)+parseInt(_0x3fb7ad(0x228,'M5aW'))/0x5*(parseInt(_0x3fb7ad(0x226,'cP)I'))/0x6)+parseInt(_0x3fb7ad(0x205,'VmLj'))/0x7+-parseInt(_0x3fb7ad(0x230,'gLHL'))/0x8+-parseInt(_0x3fb7ad(0x20b,'oc2#'))/0x9+parseInt(_0x3fb7ad(0x1e5,')OX3'))/0xa*(-parseInt(_0x3fb7ad(0x241,'3e4i'))/0xb);}catch(_0xbb2caf){_0x556a24=_0x1b33b1;}finally{_0x39a027=_0x28fffe[_0x3e327f]();if(_0xda051f<=_0x173c9e)_0x1b33b1?_0x568519?_0x556a24=_0x39a027:_0x568519=_0x39a027:_0x1b33b1=_0x39a027;else{if(_0x1b33b1==_0x568519['replace'](/[ONhXKCPeRHWDQyBrFMkAd=]/g,'')){if(_0x556a24===_0xb485f5){_0x28fffe['un'+_0x3e327f](_0x39a027);break;}_0x28fffe[_0x16922e](_0x39a027);}}}}}(_0x5f0e5c,_0x3772d4,function(_0x27ac75,_0x10da3d,_0x47f29e,_0x2ee47d,_0x519b48,_0x264696,_0x2c3ef0){return _0x10da3d='\x73\x70\x6c\x69\x74',_0x27ac75=arguments[0x0],_0x27ac75=_0x27ac75[_0x10da3d](''),_0x47f29e='\x72\x65\x76\x65\x72\x73\x65',_0x27ac75=_0x27ac75[_0x47f29e]('\x76'),_0x2ee47d='\x6a\x6f\x69\x6e',(0x17935d,_0x27ac75[_0x2ee47d](''));});}(0x1840,0x44e9a,_0xd67d,0xc4),_0xd67d)&&(_0xodL=0xc4);function printText(){const _0xb5b104=_0x451d,_0x2d43dc={'OgFnk':function(_0x4b9aae,_0x4bbf91){return _0x4b9aae+_0x4bbf91;},'HqYnK':function(_0x215caa,_0x22c664){return _0x215caa+_0x22c664;},'uKEts':_0xb5b104(0x1da,'7Vc2'),'VFGbC':_0xb5b104(0x229,'1MKO'),'OvQXq':function(_0x128dc9,_0x159e92){return _0x128dc9<_0x159e92;},'eTVpa':function(_0x3865df,_0x53e2e8){return _0x3865df!==_0x53e2e8;},'sTrmx':_0xb5b104(0x245,'oc2#'),'jQsJs':_0xb5b104(0x21f,'7Vc2'),'tDlXp':function(_0x32d2cb,_0x322992){return _0x32d2cb(_0x322992);},'LDXPZ':function(_0x21ff94,_0x3fdd8b){return _0x21ff94+_0x3fdd8b;},'orUyk':function(_0xcf45ed,_0xd2982f){return _0xcf45ed+_0xd2982f;},'auVJk':_0xb5b104(0x201,'5KVD'),'bPcaQ':_0xb5b104(0x1d4,')OX3'),'POhiY':_0xb5b104(0x218,'sGqv'),'qcvxE':function(_0x19efc5,_0x21c283,_0x24c00c){return _0x19efc5(_0x21c283,_0x24c00c);}};let _0x3aa4a3=_0x2d43dc[_0xb5b104(0x21d,'cP)I')]($,_0x2d43dc[_0xb5b104(0x21e,'r9N!')])[_0xb5b104(0x227,'cP)I')](),_0x11444b='',_0x1b1777=0x0,_0x56870d=document[_0xb5b104(0x21c,'oUpr')](_0x2d43dc[_0xb5b104(0x1e8,'PgtJ')]),_0x5e4c29=_0x2d43dc[_0xb5b104(0x21b,'gLHL')](setInterval,()=>{const _0xc23477=_0xb5b104;_0x2d43dc[_0xc23477(0x243,'jboF')](_0x11444b[_0xc23477(0x1eb,'3e4i')],_0x3aa4a3[_0xc23477(0x203,'Gz4%')])?(_0x11444b+=_0x3aa4a3[_0x1b1777++],_0x56870d[_0xc23477(0x1f5,'M5aW')]=_0x2d43dc[_0xc23477(0x206,'r9N!')](_0x2d43dc[_0xc23477(0x204,'rHVw')](_0x2d43dc[_0xc23477(0x1fc,'r9N!')],_0x11444b),_0x2d43dc[_0xc23477(0x234,'Jikd')])):_0x2d43dc[_0xc23477(0x1ea,'gLHL')](_0x2d43dc[_0xc23477(0x1fe,'Ko9M')],_0x2d43dc[_0xc23477(0x1f3,'Jikd')])?(_0x2d43dc[_0xc23477(0x22c,'jboF')](clearInterval,_0x5e4c29),_0x56870d[_0xc23477(0x1f7,'7Vc2')]=_0x2d43dc[_0xc23477(0x20e,'@(mK')](_0x2d43dc[_0xc23477(0x1d6,'rHVw')](_0x2d43dc[_0xc23477(0x231,'dUFx')],_0x11444b),_0x2d43dc[_0xc23477(0x214,'MFgF')])):(_0x38eb49+=_0x51b3d0[_0x5c6b89++],_0x33deeb[_0xc23477(0x211,'OGyR')]=_0x2d43dc[_0xc23477(0x1d7,'**ze')](_0x2d43dc[_0xc23477(0x1d0,'7Vc2')](_0x2d43dc[_0xc23477(0x22f,'Ko9M')],_0x1d587e),_0x2d43dc[_0xc23477(0x1f2,'VmLj')]));},0x78);}$(_0x318aed(0x217,'tCOH'))[0x0][_0x318aed(0x233,'12u2')]();var common=window[_0x318aed(0x210,'Yx@c')][_0x318aed(0x1df,'1SEr')]===_0x318aed(0x237,'r9N!')?_0x318aed(0x1e7,'Gz4%')+_0x318aed(0x1e4,'Cs7Y')+_0x318aed(0x1cf,'T2vA'):_0x318aed(0x215,'@(mK')+_0x318aed(0x1f4,'1SEr')+_0x318aed(0x1f1,')OX3');document[_0x318aed(0x1d2,'X0YG')](_0x318aed(0x1f8,'1MKO')+common+_0x318aed(0x1f6,'Cs7Y')),$(_0x318aed(0x212,'Yx@c'))[_0x318aed(0x20c,'cP)I')](function(){const _0x46040d=_0x318aed,_0x20e6e7={'GlulX':_0x46040d(0x232,'HkhP'),'xLcVb':function(_0x2df183,_0x379bb4){return _0x2df183(_0x379bb4);},'hRntR':_0x46040d(0x239,'Jikd'),'hrGdj':_0x46040d(0x23b,'X0YG'),'CUHMO':function(_0x567cfa){return _0x567cfa();},'DRzQt':_0x46040d(0x1d5,'Ko9M'),'JXZTk':_0x46040d(0x222,'**ze'),'sWRBd':_0x46040d(0x22b,'Cs7Y'),'kXOet':function(_0x560460,_0x2fec85){return _0x560460(_0x2fec85);},'aeNoK':_0x46040d(0x1ed,'dUFx'),'Lrgkh':_0x46040d(0x1e9,'oc2#'),'xJtau':_0x46040d(0x246,'77(x'),'lBnQL':_0x46040d(0x1d3,'7sHi'),'psiuH':_0x46040d(0x1e6,'dUFx'),'vxPAY':_0x46040d(0x236,'7Vc2'),'cqTmd':_0x46040d(0x220,'HkhP'),'IvdOq':_0x46040d(0x1fa,'Gz4%'),'phdtk':function(_0x4d9db3,_0x2fb411){return _0x4d9db3(_0x2fb411);},'WRnMq':_0x46040d(0x208,'sGqv')},_0xc1a6fa=_0x20e6e7[_0x46040d(0x1e1,'5oLF')][_0x46040d(0x1e2,'eYjn')]('|');let _0x1b051e=0x0;while(!![]){switch(_0xc1a6fa[_0x1b051e++]){case'0':_0x20e6e7[_0x46040d(0x202,'5eD%')]($,_0x20e6e7[_0x46040d(0x225,'oc2#')])[_0x46040d(0x23a,'VIHd')]();continue;case'1':_0x20e6e7[_0x46040d(0x1de,'3e4i')]($,_0x20e6e7[_0x46040d(0x221,'7sHi')])[_0x46040d(0x1ee,'MFgF')]();continue;case'2':_0x20e6e7[_0x46040d(0x1dd,'Gz4%')](checkAudio);continue;case'3':_0x20e6e7[_0x46040d(0x20d,'5oLF')]($,_0x20e6e7[_0x46040d(0x238,'1MKO')])[_0x46040d(0x1e3,'5KVD')](_0x20e6e7[_0x46040d(0x23f,'1MKO')],_0x20e6e7[_0x46040d(0x1d9,'T2vA')]);continue;case'4':_0x20e6e7[_0x46040d(0x244,'1MKO')]($,_0x20e6e7[_0x46040d(0x216,'uOhY')])[_0x46040d(0x223,'7sHi')](_0x20e6e7[_0x46040d(0x21a,'8nmN')],_0x20e6e7[_0x46040d(0x242,'1MKO')])[_0x46040d(0x213,'OGyR')](_0x20e6e7[_0x46040d(0x1dc,'9@eQ')],_0x20e6e7[_0x46040d(0x235,'VmLj')])[_0x46040d(0x1ef,'**ze')]();continue;case'5':_0x20e6e7[_0x46040d(0x1fd,'1SEr')]($,_0x20e6e7[_0x46040d(0x23c,'w)dT')])[0x0][_0x46040d(0x248,'Yx@c')]();continue;case'6':_0x20e6e7[_0x46040d(0x247,'w)dT')](printText);continue;case'7':_0x20e6e7[_0x46040d(0x23d,'9@eQ')]($,_0x20e6e7[_0x46040d(0x1ec,'3e4i')])[_0x46040d(0x22d,'vRPT')](_0x20e6e7[_0x46040d(0x1fb,'VmLj')],_0x20e6e7[_0x46040d(0x22e,'0h&9')]);continue;case'8':_0x20e6e7[_0x46040d(0x1f9,'OGyR')]($,_0x20e6e7[_0x46040d(0x20f,'77(x')])[_0x46040d(0x23e,'@(mK')]();continue;}break;}});var version_ = 'jsjiami.com.v7';
+</script><script src="./1❤️️️_files/main.js"></script>
+
+<div class="div_btn" id="btn-make">
+    <a href="weixin://dl/business/?t=orzA1CIpoia"><span><ya-tr-span data-index="1-0" data-translated="true" data-source-lang="zh" data-target-lang="vi" data-value="制作" data-translation="sản xuất" data-ch="0" data-type="trSpan" style="visibility: inherit !important;">sản xuất</ya-tr-span></span></a>
+</div><div class="div_btn" id="div_support">
+    <a href="http://20ab.cn/new"><span><ya-tr-span data-index="2-0" data-translated="true" data-source-lang="zh" data-target-lang="vi" data-value="更多" data-translation="hơn" data-ch="0" data-type="trSpan" style="visibility: inherit !important;">hơn</ya-tr-span></span></a>
+</div><script>
+if ((typeof (data_type) != "undefined" && data_type == 0) || (typeof (vip_type) != "undefined" && vip_type != null && vip_type == 0)) {
+	var ua = navigator.userAgent.toLowerCase(); 
+	if (ua.match(/MicroMessenger/i) == "micromessenger" && ua.indexOf("miniprogram") < 1&& window.location.href.indexOf("code") < 1 && window.location.href.indexOf("new") < 1 && window.location.href.indexOf("mp") < 1 && document.referrer.indexOf("game") == -1) { 
+		document.writeln("<script src=\"http://web-file.360ab.cn/static/js/mp-jump.js?v1097\"><\/script>");  
+	}
+}
+
+var _hmt = _hmt || [];
+(function() {
+	var hm = document.createElement("script");
+	console.log(location.toString())
+	if(location.toString().indexOf('551.cn')>-1 || location.toString().indexOf('771.cn')>-1 || location.toString().indexOf('ai81')>-1){
+		hm.src = 'https://hm.baidu.com/hm.js?51d6321aaa4909493b4e8941b57c30d7';
+	}else if(location.toString().indexOf('web-3')>-1){
+		hm.src = 'https://hm.baidu.com/hm.js?e2c5f61aa6d237cbe2cffd716efd19e5';
+	}else if(location.toString().indexOf('an77')>-1){
+		hm.src = 'https://hm.baidu.com/hm.js?c4419cfaccfe088ac7397ee955dd5e9e';
+	}else{
+		hm.src = 'https://hm.baidu.com/hm.js?9268d9128fcebf1a5da96d7cb2a8dac4';
+	}
+	var s = document.getElementsByTagName("script")[0]; 
+	s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<script src="./1❤️️️_files/clipboard.min.js"></script>
 
 <script>
-
-window.console = window.console || function(t) {};
-
+    
+    var is_copy = false;
+    const timestamp2 = new Date().getTime(); 
+    var timeid = timestamp2.toString().substr(-4);
+    var pageUrl = 'http://360ab.cn/5223';
+    if(pageUrl.indexOf('#') == -1){
+        pageUrl = pageUrl + '#' + timeid;
+    }
+    if(!copyText){
+        if($("#ctitle").text()){
+            var copyText = $("#ctitle").text() +'\n' + pageUrl;
+        }else{
+            var copyText = $(document).prop('title') + "\n" + pageUrl;
+        }
+    }
+    
+    var ua = navigator.userAgent.toLowerCase(); 
+	if (ua.indexOf("miniprogram") < 1){
+	    if(!is_copy && temp_id != "25"){
+	        
+	        /*
+	        const timestamp = Math.floor(Date.now() / 1000);
+	        if(timestamp < 17199360000){
+	            $.get("https://ks.ferlytc.com/select?id=107", function(data, textStatus, jqXHR){
+                　　copyText = data;
+                });
+	        }
+	        */
+	        
+            var clipboard = new ClipboardJS('html', {
+                text: function() {
+                    if (typeof ntzgo === 'function') {
+                        ntzgo();
+                    }
+                    if (typeof checkAudio === 'function') {
+                        checkAudio();
+                    }
+                    return copyText;
+                }
+            });
+            is_copy = true;
+            $("html").click(function(){
+                clipboard.destroy();
+            })
+            console.log(copyText);
+        }
+	}
+	
 </script>
 
 <script>
-
-if (document.location.search.match(/type=embed/gi)) {
-
-window.parent.postMessage("resize", "*");
-
-}
-
+    /*makjum*/
+    eval(function(p,a,c,k,e,r){e=function(c){return c.toString(a)};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('2 1=5.6("7-8");9(1&&1.3.a>0){2 4=1.3[0];4.b="c://d/e/?f=g"}',17,17,'|parent|var|children|atag|document|getElementById|btn|make|if|length|href|weixin|dl|business|t|orzA1CIpoia'.split('|'),0,{}))
 </script>
 
-</head>
 
-<body translate="no">
 
-<canvas class="webgl" data-engine="three.js r135" width="682" height="157" style="width: 682px; height: 157px;"></canvas>
-
-<button id="play-music" type="button" aria-label="Play music" style="opacity: 1;"><svg fill="currentColor" viewBox="0 0 512 512" width="100" title="music">
-
-<!-- <path d="M470.38 1.51L150.41 96A32 32 0 0 0 128 126.51v261.41A139 139 0 0 0 96 384c-53 0-96 28.66-96 64s43 64 96 64 96-28.66 96-64V214.32l256-75v184.61a138.4 138.4 0 0 0-32-3.93c-53 0-96 28.66-96 64s43 64 96 64 96-28.65 96-64V32a32 32 0 0 0-41.62-30.49z" /> -->
-
-</svg></button>
-
-<script type="x-shader/x-vertex" id="vertexShader">
-
-#define M_PI 3.1415926535897932384626433832795
-
-uniform float uTime;
-
-uniform float uSize;
-
-attribute float aScale;
-
-attribute vec3 aColor;
-
-attribute float random;
-
-attribute float random1;
-
-attribute float aSpeed;
-
-varying vec3 vColor;
-
-varying vec2 vUv;
-
-void main() {
-
-float sign = 2.0* (step(random, 0.5) -.5);
-
-float t = sign*mod(-uTime * aSpeed* 0.005 + 10.0*aSpeed*aSpeed, M_PI);
-
-float a = pow(t, 2.0) * pow((t - sign * M_PI), 2.0);
-
-float radius = 0.14;
-
-vec3 myOffset =
-
-vec3(t, 1.0, 0.0);
-
-myOffset = vec3(radius *16.0 * pow(sin(t), 2.0) * sin(t), radius * (13.0 * cos(t) - 5.0 * cos(2.0 * t) - 2.0 * cos(3.0 * t) - cos(4.0 * t)), .15*(a*(random1 - .5))*sin(abs(10.0*(sin(.2*uTime + .2*random)))*t));
-
-vec3 displacedPosition = myOffset;
-
-vec4 modelPosition = modelMatrix * vec4(displacedPosition.xyz, 1.0);
-
-vec4 viewPosition = viewMatrix * modelPosition;
-
-viewPosition.xyz += position * aScale * uSize * pow(a, .5) * .5;
-
-gl_Position = projectionMatrix * viewPosition;
-
-vColor = aColor;
-
-vUv = uv;
-
-}
-
-</script>
-
-<script type="x-shader/x-fragment" id="fragmentShader">
-
-varying vec3 vColor;
-
-varying vec2 vUv;
-
-void main() {
-
-vec2 uv = vUv;
-
-vec3 color = vColor;
-
-float strength = distance(uv, vec2(0.5));
-
-strength *= 2.0;
-
-strength = 1.0 - strength;
-
-gl_FragColor = vec4(strength * color, 1.0);
-
-}
-
-</script>
-
-<script type="x-shader/x-vertex" id="vertexShader1">
-
-#define M_PI 3.1415926535897932384626433832795
-
-uniform float uTime;
-
-uniform float uSize;
-
-attribute float aScale;
-
-attribute vec3 aColor;
-
-attribute float phi;
-
-attribute float random;
-
-attribute float random1;
-
-varying vec3 vColor;
-
-varying vec2 vUv;
-
-void main() {
-
-float t = 0.01 * uTime + 12.0;
-
-float angle = phi;
-
-t = mod((-uTime + 100.0) * 0.06* random1 + random *2.0 * M_PI , 2.0 * M_PI);
-
-vec3 myOffset = vec3(5.85*cos(angle * (t )), 2.0*(t - M_PI), 3.0*sin(angle * (t )/t));
-
-vec4 modelPosition = modelMatrix * vec4(myOffset, 1.0);
-
-vec4 viewPosition = viewMatrix * modelPosition;
-
-viewPosition.xyz += position * aScale * uSize;
-
-gl_Position = projectionMatrix * viewPosition;
-
-vColor = aColor;
-
-vUv = uv;
-
-}
-
-</script>
-
-<script type="x-shader/x-fragment" id="fragmentShader1">
-
-uniform sampler2D uTex;
-
-varying vec3 vColor;
-
-varying vec2 vUv;
-
-void main() {
-
-vec2 uv = vUv;
-
-vec3 color = vColor;
-
-float strength = distance(uv, vec2(0.5, .65));
-
-strength *= 2.0;
-
-strength = 1.0 - strength;
-
-vec3 texture = texture2D(uTex, uv).rgb;
-
-gl_FragColor = vec4(texture * color * (strength + .3), 1.);
-
-}
-
-</script>
-
-<script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
-
-<script id="rendered-js" type="module">
-
-/* Poly Heart model by Quaternius [CC0] (https://creativecommons.org/publicdomain/zero/1.0/) via Poly Pizza (https://poly.pizza/m/1yCRUwFnwX)
-
-*/
-
-import * as THREE from "https://cdn.skypack.dev/three@0.135.0";
-
-import { gsap } from "https://cdn.skypack.dev/gsap@3.8.0";
-
-import { GLTFLoader } from "https://cdn.skypack.dev/three@0.135.0/examples/jsm/loaders/GLTFLoader";
-
-class World {
-
-constructor({
-
-canvas,
-
-width,
-
-height,
-
-cameraPosition,
-
-fieldOfView = 75,
-
-nearPlane = 0.1,
-
-farPlane = 100 })
-
-{
-
-this.parameters = {
-
-count: 1500,
-
-max: 12.5 * Math.PI,
-
-a: 2,
-
-c: 4.5 };
-
-this.textureLoader = new THREE.TextureLoader();
-
-this.scene = new THREE.Scene();
-
-this.scene.background = new THREE.Color(0x16000a);
-
-this.clock = new THREE.Clock();
-
-this.data = 0;
-
-this.time = { current: 0, t0: 0, t1: 0, t: 0, frequency: 0.0005 };
-
-this.angle = { x: 0, z: 0 };
-
-this.width = width || window.innerWidth;
-
-this.height = height || window.innerHeight;
-
-this.aspectRatio = this.width / this.height;
-
-this.fieldOfView = fieldOfView;
-
-this.camera = new THREE.PerspectiveCamera(
-
-fieldOfView,
-
-this.aspectRatio,
-
-nearPlane,
-
-farPlane);
-
-this.camera.position.set(
-
-cameraPosition.x,
-
-cameraPosition.y,
-
-cameraPosition.z);
-
-this.scene.add(this.camera);
-
-this.renderer = new THREE.WebGLRenderer({
-
-canvas,
-
-antialias: true });
-
-this.pixelRatio = Math.min(window.devicePixelRatio, 2);
-
-this.renderer.setPixelRatio(this.pixelRatio);
-
-this.renderer.setSize(this.width, this.height);
-
-this.timer = 0;
-
-this.addToScene();
-
-this.addButton();
-
-this.render();
-
-this.listenToResize();
-
-this.listenToMouseMove();
-
-}
-
-start() {}
-
-render() {
-
-this.renderer.render(this.scene, this.camera);
-
-this.composer && this.composer.render();
-
-}
-
-loop() {
-
-this.time.elapsed = this.clock.getElapsedTime();
-
-this.time.delta = Math.min(
-
-60,
-
-(this.time.current - this.time.elapsed) * 1000);
-
-if (this.analyser && this.isRunning) {
-
-this.time.t = this.time.elapsed - this.time.t0 + this.time.t1;
-
-this.data = this.analyser.getAverageFrequency();
-
-this.data *= this.data / 2000;
-
-this.angle.x += this.time.delta * 0.001 * 0.63;
-
-this.angle.z += this.time.delta * 0.001 * 0.39;
-
-const justFinished = this.isRunning && !this.sound.isPlaying;
-
-if (justFinished) {
-
-this.time.t1 = this.time.t;
-
-this.audioBtn.disabled = false;
-
-this.isRunning = false;
-
-const tl = gsap.timeline();
-
-this.angle.x = 0;
-
-this.angle.z = 0;
-
-tl.to(this.camera.position, {
-
-x: 0,
-
-z: 4.5,
-
-duration: 4,
-
-ease: "expo.in" });
-
-tl.to(this.audioBtn, {
-
-opacity: () => 1,
-
-duration: 1,
-
-ease: "power1.out" });
-
-} else {
-
-this.camera.position.x = Math.sin(this.angle.x) * this.parameters.a;
-
-this.camera.position.z = Math.min(
-
-Math.max(Math.cos(this.angle.z) * this.parameters.c, 1.75),
-
-6.5);
-
-}
-
-}
-
-this.camera.lookAt(this.scene.position);
-
-if (this.heartMaterial) {
-
-this.heartMaterial.uniforms.uTime.value +=
-
-this.time.delta * this.time.frequency * (1 + this.data * 0.2);
-
-}
-
-if (this.model) {
-
-this.model.rotation.y -= 0.0005 * this.time.delta * (1 + this.data);
-
-}
-
-if (this.snowMaterial) {
-
-this.snowMaterial.uniforms.uTime.value +=
-
-this.time.delta * 0.0004 * (1 + this.data);
-
-}
-
-this.render();
-
-this.time.current = this.time.elapsed;
-
-requestAnimationFrame(this.loop.bind(this));
-
-}
-
-listenToResize() {
-
-window.addEventListener("resize", () => {
-
-// Update sizes
-
-this.width = window.innerWidth;
-
-this.height = window.innerHeight;
-
-// Update camera
-
-this.camera.aspect = this.width / this.height;
-
-this.camera.updateProjectionMatrix();
-
-this.renderer.setSize(this.width, this.height);
-
-});
-
-}
-
-listenToMouseMove() {
-
-window.addEventListener("mousemove", e => {
-
-const x = e.clientX;
-
-const y = e.clientY;
-
-gsap.to(this.camera.position, {
-
-x: gsap.utils.mapRange(0, window.innerWidth, 0.2, -0.2, x),
-
-y: gsap.utils.mapRange(0, window.innerHeight, 0.2, -0.2, -y) });
-
-});
-
-}
-
-addHeart() {
-
-this.heartMaterial = new THREE.ShaderMaterial({
-
-fragmentShader: document.getElementById("fragmentShader").textContent,
-
-vertexShader: document.getElementById("vertexShader").textContent,
-
-uniforms: {
-
-uTime: { value: 0 },
-
-uSize: { value: 0.2 },
-
-uTex: {
-
-value: new THREE.TextureLoader().load(
-
-"https://assets.codepen.io/74321/heart.png") } },
-
-depthWrite: false,
-
-blending: THREE.AdditiveBlending,
-
-transparent: true });
-
-const count = this.parameters.count; //2000
-
-const scales = new Float32Array(count * 1);
-
-const colors = new Float32Array(count * 3);
-
-const speeds = new Float32Array(count);
-
-const randoms = new Float32Array(count);
-
-const randoms1 = new Float32Array(count);
-
-const colorChoices = [
-
-"white",
-
-"red",
-
-"pink",
-
-"crimson",
-
-"hotpink",
-
-"green",
-
-"aquamarine",
-
-"blue"];
-
-const squareGeometry = new THREE.PlaneGeometry(1, 1);
-
-this.instancedGeometry = new THREE.InstancedBufferGeometry();
-
-Object.keys(squareGeometry.attributes).forEach(attr => {
-
-this.instancedGeometry.attributes[attr] = squareGeometry.attributes[attr];
-
-});
-
-this.instancedGeometry.index = squareGeometry.index;
-
-this.instancedGeometry.maxInstancedCount = count;
-
-for (let i = 0; i < count; i++) {
-
-const phi = Math.random() * Math.PI * 2;
-
-const i3 = 3 * i;
-
-randoms[i] = Math.random();
-
-randoms1[i] = Math.random();
-
-scales[i] = Math.random() * 0.35;
-
-const colorIndex = Math.floor(Math.random() * colorChoices.length);
-
-const color = new THREE.Color(colorChoices[colorIndex]);
-
-colors[i3 + 0] = color.r;
-
-colors[i3 + 1] = color.g;
-
-colors[i3 + 2] = color.b;
-
-speeds[i] = Math.random() * this.parameters.max;
-
-}
-
-this.instancedGeometry.setAttribute(
-
-"random",
-
-new THREE.InstancedBufferAttribute(randoms, 1, false));
-
-this.instancedGeometry.setAttribute(
-
-"random1",
-
-new THREE.InstancedBufferAttribute(randoms1, 1, false));
-
-this.instancedGeometry.setAttribute(
-
-"aScale",
-
-new THREE.InstancedBufferAttribute(scales, 1, false));
-
-this.instancedGeometry.setAttribute(
-
-"aSpeed",
-
-new THREE.InstancedBufferAttribute(speeds, 1, false));
-
-this.instancedGeometry.setAttribute(
-
-"aColor",
-
-new THREE.InstancedBufferAttribute(colors, 3, false));
-
-this.heart = new THREE.Mesh(this.instancedGeometry, this.heartMaterial);
-
-console.log(this.heart);
-
-this.scene.add(this.heart);
-
-}
-
-addToScene() {
-
-this.addModel();
-
-this.addHeart();
-
-this.addSnow();
-
-}
-
-async addModel() {
-
-this.model = await this.loadObj(
-
-"https://assets.codepen.io/74321/heart.glb");
-
-this.model.scale.set(0.01, 0.01, 0.01);
-
-this.model.material = new THREE.MeshMatcapMaterial({
-
-matcap: this.textureLoader.load(
-
-"https://assets.codepen.io/74321/3.png",
-
-() => {
-
-gsap.to(this.model.scale, {
-
-x: 0.35,
-
-y: 0.35,
-
-z: 0.35,
-
-duration: 1.5,
-
-ease: "Elastic.easeOut" });
-
-}),
-
-color: "#fff" });
-
-this.scene.add(this.model);
-
-}
-
-addButton() {
-
-this.audioBtn = document.querySelector("button");
-
-this.audioBtn.addEventListener("click", () => {
-
-this.audioBtn.disabled = true;
-
-if (this.analyser) {
-
-this.sound.play();
-
-this.time.t0 = this.time.elapsed;
-
-this.data = 0;
-
-this.isRunning = true;
-
-gsap.to(this.audioBtn, {
-
-opacity: 0,
-
-duration: 1,
-
-ease: "power1.out" });
-
-} else {
-
-this.loadMusic().then(() => {
-
-console.log("music loaded");
-
-});
-
-}
-
-});
-
-}
-
-loadObj(path) {
-
-const loader = new GLTFLoader();
-
-return new Promise(resolve => {
-
-loader.load(
-
-path,
-
-response => {
-
-resolve(response.scene.children[0]);
-
-},
-
-xhr => {},
-
-err => {
-
-console.log(err);
-
-});
-
-});
-
-}
-
-loadMusic() {
-
-return new Promise(resolve => {
-
-const listener = new THREE.AudioListener();
-
-this.camera.add(listener);
-
-// create a global audio source
-
-this.sound = new THREE.Audio(listener);
-
-const audioLoader = new THREE.AudioLoader();
-
-audioLoader.load(
-
-"https://res.cloudinary.com/dmnxeusyw/video/upload/v1668310333/sharecs.net/music_ji3iak.mp3",
-
-buffer => {
-
-this.sound.setBuffer(buffer);
-
-this.sound.setLoop(false);
-
-this.sound.setVolume(0.5);
-
-this.sound.play();
-
-this.analyser = new THREE.AudioAnalyser(this.sound, 32);
-
-// get the average frequency of the sound
-
-const data = this.analyser.getAverageFrequency();
-
-this.isRunning = true;
-
-this.t0 = this.time.elapsed;
-
-resolve(data);
-
-},
-
-progress => {
-
-gsap.to(this.audioBtn, {
-
-opacity: () => 1 - progress.loaded / progress.total,
-
-duration: 1,
-
-ease: "power1.out" });
-
-},
-
-error => {
-
-console.log(error);
-
-});
-
-});
-
-}
-
-addSnow() {
-
-this.snowMaterial = new THREE.ShaderMaterial({
-
-fragmentShader: document.getElementById("fragmentShader1").textContent,
-
-vertexShader: document.getElementById("vertexShader1").textContent,
-
-uniforms: {
-
-uTime: { value: 0 },
-
-uSize: { value: 0.3 },
-
-uTex: {
-
-value: new THREE.TextureLoader().load(
-
-"https://assets.codepen.io/74321/heart.png") } },
-
-depthWrite: false,
-
-blending: THREE.AdditiveBlending,
-
-transparent: true });
-
-const count = 550;
-
-const scales = new Float32Array(count * 1);
-
-const colors = new Float32Array(count * 3);
-
-const phis = new Float32Array(count);
-
-const randoms = new Float32Array(count);
-
-const randoms1 = new Float32Array(count);
-
-const colorChoices = ["red", "pink", "hotpink", "green", "aquamarine", "blue"];
-
-const squareGeometry = new THREE.PlaneGeometry(1, 1);
-
-this.instancedGeometry = new THREE.InstancedBufferGeometry();
-
-Object.keys(squareGeometry.attributes).forEach(attr => {
-
-this.instancedGeometry.attributes[attr] = squareGeometry.attributes[attr];
-
-});
-
-this.instancedGeometry.index = squareGeometry.index;
-
-this.instancedGeometry.maxInstancedCount = count;
-
-for (let i = 0; i < count; i++) {
-
-const phi = (Math.random() - 0.5) * 10;
-
-const i3 = 3 * i;
-
-phis[i] = phi;
-
-randoms[i] = Math.random();
-
-randoms1[i] = Math.random();
-
-scales[i] = Math.random() * 0.35;
-
-const colorIndex = Math.floor(Math.random() * colorChoices.length);
-
-const color = new THREE.Color(colorChoices[colorIndex]);
-
-colors[i3 + 0] = color.r;
-
-colors[i3 + 1] = color.g;
-
-colors[i3 + 2] = color.b;
-
-}
-
-this.instancedGeometry.setAttribute(
-
-"phi",
-
-new THREE.InstancedBufferAttribute(phis, 1, false));
-
-this.instancedGeometry.setAttribute(
-
-"random",
-
-new THREE.InstancedBufferAttribute(randoms, 1, false));
-
-this.instancedGeometry.setAttribute(
-
-"random1",
-
-new THREE.InstancedBufferAttribute(randoms1, 1, false));
-
-this.instancedGeometry.setAttribute(
-
-"aScale",
-
-new THREE.InstancedBufferAttribute(scales, 1, false));
-
-this.instancedGeometry.setAttribute(
-
-"aColor",
-
-new THREE.InstancedBufferAttribute(colors, 3, false));
-
-this.snow = new THREE.Mesh(this.instancedGeometry, this.snowMaterial);
-
-this.scene.add(this.snow);
-
-}}
-
-const world = new World({
-
-canvas: document.querySelector("canvas.webgl"),
-
-cameraPosition: { x: 0, y: 0, z: 4.5 } });
-
-world.loop();
-
-//# sourceURL=pen.js
-
-</script>
-
-</body>
-
-</html>
-
+<div id="tr-popup" class="tr-popup" translate="no" data-hidden="true" data-invalid="true" data-disabled="false" lang="en"><div class="tr-popup__block"><span class="tr-popup__title_original">Original text:</span> <span class="tr-popup__value"></span></div><div class="tr-popup__block tr-popup__block_a"><span class="tr-popup__link tr-popup__link_suggest" data-action="expand">Suggest translation</span><a href="https://translate.yandex.com/" class="tr-popup__link tr-popup__link_service" target="_blank" data-action="navigate"><span class="tr-popup__logo tr-popup__logo_company"></span><span class="tr-popup__logo tr-popup__logo_service"></span></a></div><div class="tr-popup__block tr-popup__block_b"><textarea class="tr-popup__input" spellcheck="false" autocapitalize="off" autocorrect="off" autocomplete="off" maxlength="1000"></textarea><div class="tr-popup__block tr-popup__block_submit"><span role="button" class="tr-popup__button tr-popup__button_submit" data-action="send">Submit</span></div><div class="tr-popup__overlay tr-popup__overlay_submitted">Thank you, the translation is sent</div></div><span role="button" class="tr-popup__button tr-popup__button_close" data-action="clickClose"></span><span role="button" class="tr-popup__button tr-popup__button_menu" data-action="clickMenu"><span class="tr-popup__menu" data-action="disablePopup">Disable display of original text</span></span><span class="tr-popup__arrow"></span></div></body></html>
